@@ -144,9 +144,9 @@ const LandingPage: React.FC = () => {
                 handleScroll(headerRef);
                 mixpanel.track("OnClick NexusPay Logo");
               }}
-              className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity cursor-pointer"
+              className="lg:text-3xl text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity cursor-pointer"
             >
-              Nexus PayLink
+              NexusPayLink
             </div>
             <div className="hidden md:flex items-center space-x-8">
               {["Steps", "Features", "Business", "FAQs"].map((item) => (
@@ -171,6 +171,14 @@ const LandingPage: React.FC = () => {
               <button
                 onClick={handleRedirect}
                 className="px-6 py-2 bg-blue-600 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg hover:shadow-blue-500/30"
+              >
+                Launch App
+              </button>
+            </div>
+            <div className="md:hidden">
+              <button
+                className="px-6 py-2 bg-blue-600 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg hover:shadow-blue-500/30"
+                onClick={handleRedirect}
               >
                 Launch App
               </button>
